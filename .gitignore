@@ -35,3 +35,6 @@ out
 *.zip
 *.tar.gz
 *.rar
+
+# Properties (has secret keys)
+application.properties
