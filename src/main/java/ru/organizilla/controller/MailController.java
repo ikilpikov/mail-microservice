@@ -52,6 +52,11 @@ public class MailController {
         return sendHtmlMail(email);
     }
 
+    @GetMapping(value = "/idk")
+    public EmailDescription idk() {
+        return new EmailDescription("1", "2", "3", "4");
+    }
+
     private ResponseEntity<String> sendHtmlMail(EmailDescription email) {
         try {
             htmlHandler.initializeHtmlContent(email.htmlTemplate());
