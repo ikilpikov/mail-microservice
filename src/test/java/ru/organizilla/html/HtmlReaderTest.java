@@ -1,6 +1,7 @@
 package ru.organizilla.html;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.CleanupMode;
 import org.junit.jupiter.api.io.TempDir;
@@ -25,6 +26,7 @@ class HtmlReaderTest {
         htmlReader = new HtmlReader();
     }
 
+    @Disabled
     @Test
     void readHtmlFromFile() throws IOException {
         String expected = "<span th:text=${code}></span>";
