@@ -35,7 +35,7 @@ class HtmlHandlerTest {
 
     @Test
     void setVariableValue() {
-        String expected = "<span th:text=></span>";
+        String expected = "<span th:text=6></span>";
 
         htmlHandler.setVariableValue("code", "6");
         String actual = htmlHandler.getHtmlContent();
